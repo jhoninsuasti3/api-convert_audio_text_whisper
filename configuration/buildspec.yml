@@ -24,7 +24,6 @@ phases:
       - mv $DOCKERRUN $RENAME_TO
       - chmod +x start.sh
       - echo deleting Dockerfile
-      - rm ecr.Dockerfile
       - rm develop.Dockerfile
       - chmod +x edit_dockerrun.sh
       - ./edit_dockerrun.sh "$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:latest" "$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG"
